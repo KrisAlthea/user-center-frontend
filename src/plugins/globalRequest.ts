@@ -6,6 +6,7 @@ import {extend} from 'umi-request';
 import {message} from "antd";
 import {stringify} from "querystring";
 import {history} from "umi";
+import * as process from "process";
 
 
 /**
@@ -13,6 +14,7 @@ import {history} from "umi";
  */
 const request = extend({
   credentials: 'include', // 默认请求是否带上cookie
+  prefix:process.env.NODE_ENV === 'production' ? 'http://user-backend.haoran.icu':undefined
   // requestType: 'form',
 });
 
