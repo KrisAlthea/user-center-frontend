@@ -26,6 +26,12 @@ const Footer: React.FC = () => {
           href: 'https://ant.design',
           blankTarget: true,
         },
+        {
+          key: 'Ant Design',
+          title: '苏ICP备2024074273号',
+          href: 'https://beian.miit.gov.cn/',
+          blankTarget: true,
+        },
       ]}
     />
   );
